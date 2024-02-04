@@ -3,9 +3,12 @@
 layout: home
 
 hero:
-  name: "lyf的笔记"
-  text: "学习笔记"
-  tagline: My great project tagline
+  name: "lyf"
+  text: "lyf-blog"
+  tagline: study hard and make progress every day
+  image:
+    src: /logo.jpg
+    alt: lyf-blog
   actions:
     - theme: brand
       text: Markdown Examples
@@ -15,11 +18,11 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
+  - icon: 📝
+    title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
