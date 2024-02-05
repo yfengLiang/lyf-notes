@@ -7,7 +7,7 @@ hero:
   text: "lyf-blog"
   tagline: study hard and make progress every day
   image:
-    src: /logo.jpg
+    src: /home.jpg
     alt: lyf-blog
   actions:
     - theme: brand
