@@ -127,3 +127,16 @@ git commit-m'feat:添加字典管理 #1'
 参考：
 https://blog.csdn.net/GyaoG/article/details/125713082
 https://blog.csdn.net/cool99781/article/details/105821546
+
+## 3、遇到的问题
+
+### 3.1 push 时被墙了怎么办
+
+![Alt text](./public/git-image6.png)
+只需
+![Alt text](./public/git-image7.png)
+HTTP_PROXY 是一个常用的环境变量，用于指定 HTTP 代理服务器的地址和端口。当设置后，许多支持通过此环境变量读取代理配置的命令行工具（如 curl、wget 等）将会通过指定的代理服务器来发送 HTTP 请求。
+
+在这个例子中，将 HTTP 代理设置为本地回环地址 127.0.0.1 的 7890 端口。这意味着执行命令时（如 curl、wget 或其他支持 HTTP 代理的工具），这些工具将会把所有的 HTTP 流量转发到本地的 7890 端口上的代理服务上。
+
+注意，设置了此环境变量后只有支持 HTTP_PROXY 环境变量的应用程序才会使用这个代理设置。对于 HTTPS 协议的请求，通常需要设置额外的环境变量 HTTPS_PROXY 或者 ALL_PROXY 来指定 HTTPS 代理服务器。
