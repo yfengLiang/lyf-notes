@@ -1,10 +1,10 @@
 # 树
 
-- [二叉搜索树](binary-search-tree)
-- [AVL 树](avl-tree)
-- [红黑树](red-black-tree)
-- [线段树](segment-tree) - with min/max/sum range queries examples
-- [芬威克树/Fenwick Tree](fenwick-tree) (Binary Indexed Tree)
+- [二叉搜索树](./binary-search-tree/README.md)
+- [AVL 树](./avl-tree/README.md)
+- [红黑树](./red-black-tree/README.md)
+- [线段树](./segment-tree/README.md) - with min/max/sum range queries examples
+- [芬威克树/Fenwick Tree](./fenwick-tree/README.md) (Binary Indexed Tree)
 
 在计算机科学中, **树(tree)** 是一种广泛使用的抽象数据类型(ADT)— 或实现此 ADT 的数据结构 — 模拟分层树结构, 具有根节点和有父节点的子树,表示为一组链接节点。
 
