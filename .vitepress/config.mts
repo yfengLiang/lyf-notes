@@ -22,7 +22,7 @@ export default defineConfig({
       },
       {
         text: "刷题小结",
-        link: "/fe/刷题小结/1月",
+        link: "/fe/刷题小结/测试",
         activeMatch: "/fe/刷题小结/",
       },
     ],
@@ -92,12 +92,35 @@ export default defineConfig({
           {
             text: "02-浏览器",
             collapsed: false,
-            items: [{ text: "debug", link: "02-浏览器debug/浏览器debug" }],
+            items: [{ text: "debug", link: "02-debug/debug" }],
           },
           {
             text: "03-git",
             collapsed: false,
             items: [{ text: "git", link: "03-Git/git" }],
+          },
+        ],
+      },
+      "/fe/刷题小结/": {
+        base: "/fe/刷题小结/",
+        items: [
+          {
+            text: "01-数据结构",
+            collapsed: false,
+            items: [
+              { text: "数据结构", link: "01-数据结构/数据结构" },
+              { text: "复杂度", link: "01-数据结构/复杂度" },
+            ],
+          },
+          {
+            text: "02-算法",
+            collapsed: false,
+            items: [{ text: "算法", link: "算法" }],
+          },
+          {
+            text: "03-测试",
+            collapsed: false,
+            items: [{ text: "测试", link: "测试" }],
           },
         ],
       },
