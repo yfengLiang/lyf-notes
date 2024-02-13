@@ -1,36 +1,23 @@
-# Stack
+# 栈
 
-_Read this in other languages:_
-[_简体中文_](README.zh-CN.md),
-[_Русский_](README.ru-RU.md),
-[_日本語_](README.ja-JP.md),
-[_Français_](README.fr-FR.md),
-[_Português_](README.pt-BR.md),
-[_한국어_](README.ko-KR.md),
-[_Українська_](README.uk-UA.md)
+在计算机科学中, 一个 **栈(stack)** 是一种抽象数据类型,用作表示元素的集合,具有两种主要操作:
 
-In computer science, a **stack** is an abstract data type that serves
-as a collection of elements, with two principal operations:
+- **push**, 添加元素到栈的顶端(末尾);
+- **pop**, 移除栈最顶端(末尾)的元素.
 
-* **push**, which adds an element to the collection, and
-* **pop**, which removes the most recently added element that was not yet removed.
+以上两种操作可以简单概括为“后进先出(LIFO = last in, first out)”。
 
-The order in which elements come off a stack gives rise to its
-alternative name, LIFO (last in, first out). Additionally, a
-peek operation may give access to the top without modifying
-the stack. The name "stack" for this type of structure comes
-from the analogy to a set of physical items stacked on top of
-each other, which makes it easy to take an item off the top
-of the stack, while getting to an item deeper in the stack
-may require taking off multiple other items first.
+此外,应有一个 `peek` 操作用于访问栈当前顶端(末尾)的元素。
 
-Simple representation of a stack runtime with push and pop operations.
+"栈"这个名称,可类比于一组物体的堆叠(一摞书,一摞盘子之类的)。
+
+栈的 push 和 pop 操作的示意
 
 ![Stack](./images/stack.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
-## References
+## 参考
 
-- [Wikipedia](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+- [Wikipedia](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>)
 - [YouTube](https://www.youtube.com/watch?v=wjI1WNcIntg&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&index=3&)

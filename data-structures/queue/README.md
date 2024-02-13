@@ -1,37 +1,16 @@
-# Queue
+# 队列
 
-_Read this in other languages:_
-[_简体中文_](README.zh-CN.md),
-[_Русский_](README.ru-RU.md),
-[_日本語_](README.ja-JP.md),
-[_Français_](README.fr-FR.md),
-[_Português_](README.pt-BR.md),
-[_한국어_](README.ko-KR.md),
-[_Українська_](README.uk-UA.md)
+在计算机科学中, 一个 **队列(queue)** 是一种特殊类型的抽象数据类型或集合。集合中的实体按顺序保存。
 
-In computer science, a **queue** is a particular kind of abstract data
-type or collection in which the entities in the collection are
-kept in order and the principle (or only) operations on the
-collection are the addition of entities to the rear terminal
-position, known as enqueue, and removal of entities from the
-front terminal position, known as dequeue. This makes the queue
-a First-In-First-Out (FIFO) data structure. In a FIFO data
-structure, the first element added to the queue will be the
-first one to be removed. This is equivalent to the requirement
-that once a new element is added, all elements that were added
-before have to be removed before the new element can be removed.
-Often a peek or front operation is also entered, returning the
-value of the front element without dequeuing it. A queue is an
-example of a linear data structure, or more abstractly a
-sequential collection.
+队列基本操作有两种：入队和出队。从队列的后端位置添加实体，称为入队；从队列的前端位置移除实体，称为出队。
 
-Representation of a FIFO (first in, first out) queue
+队列中元素先进先出 FIFO (first in, first out)的示意
 
 ![Queue](./images/queue.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
-## References
+## 参考
 
-- [Wikipedia](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+- [Wikipedia](<https://en.wikipedia.org/wiki/Queue_(abstract_data_type)>)
 - [YouTube](https://www.youtube.com/watch?v=wjI1WNcIntg&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&index=3&)

@@ -1,37 +1,24 @@
-# Hash Table
+# 哈希表
 
-_Read this in other languages:_
-[_简体中文_](README.zh-CN.md),
-[_Русский_](README.ru-RU.md),
-[_日本語_](README.ja-JP.md),
-[_Français_](README.fr-FR.md),
-[_Português_](README.pt-BR.md),
-[_한국어_](README.ko-KR.md),
-[_Українська_](README.uk-UA.md)
+在计算中, 一个 **哈希表(hash table 或 hash map)** 是一种实现 _关联数组(associative array)_
+的抽象数据类型, 该结构可以将 _键映射到值_。
 
-In computing, a **hash table** (hash map) is a data
-structure which implements an _associative array_
-abstract data type, a structure that can _map keys
-to values_. A hash table uses a _hash function_ to
-compute an index into an array of buckets or slots,
-from which the desired value can be found
+哈希表使用 _哈希函数/散列函数_ 来计算一个值在数组或桶(buckets)中或槽(slots)中对应的索引,可使用该索引找到所需的值。
 
-Ideally, the hash function will assign each key to a
-unique bucket, but most hash table designs employ an
-imperfect hash function, which might cause hash
-collisions where the hash function generates the same
-index for more than one key. Such collisions must be
-accommodated in some way.
+理想情况下,散列函数将为每个键分配给一个唯一的桶(bucket),但是大多数哈希表设计采用不完美的散列函数,这可能会导致"哈希冲突(hash collisions)",也就是散列函数为多个键(key)生成了相同的索引,这种碰撞必须
+以某种方式进行处理。
 
 ![Hash Table](./images/hash-table.jpeg)
 
-Hash collision resolved by separate chaining.
+_Made with [okso.app](https://okso.app)_
+
+通过单独的链接解决哈希冲突
 
 ![Hash Collision](./images/collision-resolution.jpeg)
 
 _Made with [okso.app](https://okso.app)_
 
-## References
+## 参考
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
 - [YouTube](https://www.youtube.com/watch?v=shs0KM3wKv8&index=4&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
