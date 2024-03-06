@@ -18,11 +18,13 @@ hero:
       link: /fe/工具使用/01-代理/代理
 
 features:
-  - icon: 📝
+  - icon: 💻
     title: Feature A
     details: This note can record my learning process
-  - title: Feature B
+  - icon: 📝
+    title: Feature B
     details: Keep track of the problems I've had to avoid repeating them
-  - title: Feature C
+  - icon: 📎
+    title: Feature C
     details: Study in a planned way
 ---
