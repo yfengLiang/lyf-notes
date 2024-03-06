@@ -11,18 +11,18 @@ hero:
     alt: lyf-blog
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 编程语言
+      link: /fe/language/01-页面样式小结/布局
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 工具
+      link: /fe/工具使用/01-代理/代理
 
 features:
   - icon: 📝
     title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: This note can record my learning process
   - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Keep track of the problems I've had to avoid repeating them
   - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Study in a planned way
 ---

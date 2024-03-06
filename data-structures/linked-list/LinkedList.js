@@ -1,16 +1,17 @@
 import LinkedListNode from './LinkedListNode';
 import Comparator from '../../utils/comparator/Comparator';
 
+// 创建链表函数
 export default class LinkedList {
   /**
    * @param {Function} [comparatorFunction]
    */
   constructor(comparatorFunction) {
     /** @var LinkedListNode */
-    this.head = null;
+    this.head = null;//头结点指针
 
     /** @var LinkedListNode */
-    this.tail = null;
+    this.tail = null;//尾结点指针
 
     this.compare = new Comparator(comparatorFunction);
   }
@@ -40,7 +41,8 @@ export default class LinkedList {
   append(value) {
     const newNode = new LinkedListNode(value);
 
-    // If there is no head yet let's make new node a head.
+    // 第三行检查链表是否为空。如果链表为空（即无头结点），则将头结点和尾节点指针都指向新节点。
+    // 因为这是链表中唯一的节点，所以头结点和尾节点都指向它。
     if (!this.head) {
       this.head = newNode;
       this.tail = newNode;
@@ -48,10 +50,10 @@ export default class LinkedList {
       return this;
     }
 
-    // Attach new node to the end of linked list.
+    // 尾节点的next确实是指向null，但这里是尾插法 所以应该将链表尾节点的next指向新添加的节点，并更新尾结点尾新节点（newNode在创建时它的next属性默认尾null）
     this.tail.next = newNode;
     this.tail = newNode;
-
+    // 最后一行返回链表本身，允许我们进行链式操作。
     return this;
   }
 
@@ -68,14 +70,14 @@ export default class LinkedList {
     } else {
       // count 将用于跟踪当前遍历链表的位置
       let count = 1;
-      // 将currentNode设置为链表的头节点
+      // 将currentNode指向链表头节点
       let currentNode = this.head;
+      // 创建新节点并为其分配内存
       const newNode = new LinkedListNode(value);
       // 当 currentNode 为空，说明遍历到了链表的末尾。先检查count 是否=index。若等于index ，则 break 语句会结束循环,因为它找到了要插入新节点的位置
       while (currentNode) {
         if (count === index) break;
-        // 如果 count不等于index，就将currentNode设置为下一个节点，这是对链表的遍历操作。
-        // 当这个循环结束时，currentNode 会成为链表中插入位置的前一个节点（或最后一个节点，如果 index 超过链表的长度）。
+        // 如果 count不等于index，就表明指向到插入的地方之后了，所以让currentNode指向插入的节点的下一个节点。
         currentNode = currentNode.next;
         count += 1;
       }
@@ -245,10 +247,15 @@ export default class LinkedList {
   }
 
   /**
+   * 处理链表时将链表节点转换成字符串
    * @param {function} [callback]
    * @return {string}
    */
   toString(callback) {
+    // toArray()是将链表转换为数组，map遍历数组中的每个元素，并对每个元素执行指定函数。
+    // 在这里遍历了由toArray()产生的数组，并在每个节点上调用toString()
+    // node.toString(callback))的toString是节点对象的一个方法，将节点转化为字符串，他可以接受一个callback函数作为参数来自定义转化的格式
+    // toString()是js的数组方法。在这里他可以把由map产生的字符串数组合并成一个字符串
     return this.toArray().map((node) => node.toString(callback)).toString();
   }
 

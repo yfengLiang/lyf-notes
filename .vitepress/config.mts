@@ -13,7 +13,7 @@ export default defineConfig({
     nav: [
       {
         text: "语言",
-        link: "/fe/language/01-页面样式小结/页面样式小结",
+        link: "/fe/language/01-页面样式小结/布局",
         activeMatch: "/fe/language/",
       },
       {
@@ -23,7 +23,7 @@ export default defineConfig({
       },
       {
         text: "刷题小结",
-        link: "/fe/刷题小结/测试",
+        link: "/fe/刷题小结/01-数据结构/数据结构",
         activeMatch: "/fe/刷题小结/",
       },
     ],
@@ -114,14 +114,14 @@ export default defineConfig({
             ],
           },
           {
-            text: "02-算法",
+            text: "02-面试题",
             collapsed: false,
-            items: [{ text: "算法", link: "算法" }],
+            items: [{ text: "Vue面试题小结", link: "02-面试题/Vue面试题小结" }],
           },
           {
-            text: "03-测试",
+            text: "03-算法",
             collapsed: false,
-            items: [{ text: "测试", link: "测试" }],
+            items: [{ text: "算法", link: "算法" }],
           },
         ],
       },

@@ -1,7 +1,8 @@
+// 定义链表节点结构
 export default class LinkedListNode {
   constructor(value, next = null) {
-    this.value = value;
-    this.next = next;
+    this.value = value;//数据
+    this.next = next;//指向下一个节点的指针
   }
 
   /**
