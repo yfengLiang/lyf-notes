@@ -19,12 +19,15 @@ hero:
 
 features:
   - icon: 💻
-    title: Feature A
-    details: This note can record my learning process
-  - icon: 📝
-    title: Feature B
+    title: 我的CSDN主页
     details: Keep track of the problems I've had to avoid repeating them
+    link: https://blog.csdn.net/weixin_60697383?type=blog
+  - icon: 📝
+    title: 我的掘金主页
+    details: This note can record my learning process
+    link: https://juejin.cn/user/3589278462651054/posts
   - icon: 📎
-    title: Feature C
+    title: Debug
     details: Study in a planned way
+    link: /fe/工具使用/02-Debug/Debug
 ---
