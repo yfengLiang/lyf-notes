@@ -61,6 +61,10 @@ export default defineConfig({
                     text: "encodeURIComponent()",
                     link: "02-JS小结/encodeURIComponent()",
                   },
+                  {
+                    text: "ES6",
+                    link: "02-JS小结/ES6",
+                  },
                 ],
               },
               {
