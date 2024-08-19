@@ -3,8 +3,7 @@
 layout: home
 
 hero:
-  name: "lyf"
-  text: "lyf-blog"
+  name: "lyf-blog"
   tagline: study hard and make progress every day
   image:
     src: /home.jpg

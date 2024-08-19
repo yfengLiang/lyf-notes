@@ -36,9 +36,13 @@ export default defineConfig({
             text: "开发语言",
             items: [
               {
-                text: "01-CSS小结",
+                text: "01-HTML与CSS小结",
                 collapsed: false,
                 items: [
+                  {
+                    text: "基础",
+                    link: "01-页面样式小结/基础",
+                  },
                   {
                     text: "布局",
                     link: "01-页面样式小结/布局",
